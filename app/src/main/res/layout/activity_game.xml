@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GameActivity"
+    android:background="@color/bg"
+    android:paddingVertical="60dp">
+
+    <Button
+        android:id="@+id/a1"
+        android:layout_width="100dp"
+        android:layout_height="105dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/a2"
+        app:layout_constraintBottom_toTopOf="@+id/b1"
+        android:layout_marginBottom="10dp"
+        tools:text="1"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/bg_btn"/>
+
+    <Button
+        android:id="@+id/a2"
+        android:layout_width="100dp"
+        android:layout_height="105dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/a1"
+        app:layout_constraintEnd_toStartOf="@+id/a3"
+        app:layout_constraintBottom_toTopOf="@+id/b2"
+        android:layout_marginBottom="10dp"
+        tools:text="1"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/bg_btn"/>
+
+    <Button
+        android:id="@+id/a3"
+        android:layout_width="100dp"
+        android:layout_height="105dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/a2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/b3"
+        android:layout_marginBottom="10dp"
+        tools:text="1"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/bg_btn"/>
+
+
+    <Button
+        android:id="@+id/b1"
+        android:layout_width="100dp"
+        android:layout_height="105dp"
+        app:layout_constraintTop_toBottomOf="@+id/a1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/b2"
+        app:layout_constraintBottom_toTopOf="@+id/c1"
+        android:layout_marginBottom="10dp"
+        tools:text="1"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/bg_btn"/>
+
+    <Button
+        android:id="@+id/b2"
+        android:layout_width="100dp"
+        android:layout_height="105dp"
+        app:layout_constraintTop_toBottomOf="@+id/a2"
+        app:layout_constraintStart_toEndOf="@+id/b1"
+        app:layout_constraintEnd_toStartOf="@+id/b3"
+        app:layout_constraintBottom_toTopOf="@+id/c2"
+        android:layout_marginBottom="10dp"
+        tools:text="1"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/bg_btn"/>
+
+    <Button
+        android:id="@+id/b3"
+        android:layout_width="100dp"
+        android:layout_height="105dp"
+        app:layout_constraintTop_toBottomOf="@+id/a3"
+        app:layout_constraintStart_toEndOf="@+id/b2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/c3"
+        android:layout_marginBottom="10dp"
+        tools:text="1"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/bg_btn"/>
+
+
+    <Button
+        android:id="@+id/c1"
+        android:layout_width="100dp"
+        android:layout_height="105dp"
+        app:layout_constraintTop_toBottomOf="@+id/b1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/c2"
+        app:layout_constraintBottom_toTopOf="@+id/cvTurn"
+        android:layout_marginBottom="100dp"
+        tools:text="1"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/bg_btn"/>
+
+    <Button
+        android:id="@+id/c2"
+        android:layout_width="100dp"
+        android:layout_height="105dp"
+        app:layout_constraintTop_toBottomOf="@+id/b2"
+        app:layout_constraintStart_toEndOf="@+id/c1"
+        app:layout_constraintEnd_toStartOf="@+id/c3"
+        app:layout_constraintBottom_toTopOf="@+id/cvTurn"
+        android:layout_marginBottom="100dp"
+        tools:text="1"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/bg_btn"/>
+
+    <Button
+        android:id="@+id/c3"
+        android:layout_width="100dp"
+        android:layout_height="105dp"
+        app:layout_constraintTop_toBottomOf="@+id/b3"
+        app:layout_constraintStart_toEndOf="@+id/c2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/cvTurn"
+        android:layout_marginBottom="100dp"
+        tools:text="1"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/bg_btn"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvTurn"
+        android:layout_width="105dp"
+        android:layout_height="105dp"
+        android:backgroundTint="@color/bg_btn"
+        app:cardCornerRadius="50dp"
+        app:layout_constraintEnd_toStartOf="@+id/restart"
+        app:layout_constraintTop_toBottomOf="@+id/a1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/tvTurn"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:text="X"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="50sp"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <ImageButton
+        android:id="@+id/restart"
+        android:contentDescription="@string/restart"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_restart"
+        android:backgroundTint="@color/bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/c3"
+        app:layout_constraintStart_toEndOf="@+id/cvTurn"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="20dp"
+        app:tint="@color/bg_btn" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
