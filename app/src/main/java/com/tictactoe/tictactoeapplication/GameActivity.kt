@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageButton
 import android.widget.TextView
+import androidx.core.content.ContextCompat
 
 
 class GameActivity : AppCompatActivity() {
@@ -144,14 +145,23 @@ class GameActivity : AppCompatActivity() {
 
         restart.setOnClickListener {
             a1.text = ""
+            a1.setBackgroundColor(ContextCompat.getColor(this, R.color.bg_btn2))
             a2.text = ""
+            a2.setBackgroundColor(ContextCompat.getColor(this, R.color.bg_btn2))
             a3.text = ""
+            a3.setBackgroundColor(ContextCompat.getColor(this, R.color.bg_btn2))
             b1.text = ""
+            b1.setBackgroundColor(ContextCompat.getColor(this, R.color.bg_btn2))
             b2.text = ""
+            b2.setBackgroundColor(ContextCompat.getColor(this, R.color.bg_btn2))
             b3.text = ""
+            b3.setBackgroundColor(ContextCompat.getColor(this, R.color.bg_btn2))
             c1.text = ""
+            c1.setBackgroundColor(ContextCompat.getColor(this, R.color.bg_btn2))
             c2.text = ""
+            c2.setBackgroundColor(ContextCompat.getColor(this, R.color.bg_btn2))
             c3.text = ""
+            c3.setBackgroundColor(ContextCompat.getColor(this, R.color.bg_btn2))
             currentTurn = 0
             ui()
         }
@@ -162,6 +172,63 @@ class GameActivity : AppCompatActivity() {
         if(currentTurn%2 == 0){
             tvTurn.text = "X"
         }else{tvTurn.text = "O"}
+
+        if((a1.text == a2.text && a2.text == a3.text) && a1.text != ""){
+            a1.setBackgroundColor(ContextCompat.getColor(this, R.color.bg_btn2))
+            a2.setBackgroundColor(ContextCompat.getColor(this, R.color.bg_btn2))
+            a3.setBackgroundColor(ContextCompat.getColor(this, R.color.bg_btn2))
+            currentTurn = 9
+        }
+
+        if((b1.text == b2.text && b2.text == b3.text) && b1.text != ""){
+            b1.setBackgroundColor(ContextCompat.getColor(this, R.color.bg_btn2))
+            b2.setBackgroundColor(ContextCompat.getColor(this, R.color.bg_btn2))
+            b3.setBackgroundColor(ContextCompat.getColor(this, R.color.bg_btn2))
+            currentTurn = 9
+        }
+
+        if((c1.text == c2.text && c2.text == c3.text) && c1.text != ""){
+            c1.setBackgroundColor(ContextCompat.getColor(this, R.color.bg_btn2))
+            c2.setBackgroundColor(ContextCompat.getColor(this, R.color.bg_btn2))
+            c3.setBackgroundColor(ContextCompat.getColor(this, R.color.bg_btn2))
+            currentTurn = 9
+        }
+
+        if((a1.text == b1.text && b1.text == c1.text) && a1.text != ""){
+            a1.setBackgroundColor(ContextCompat.getColor(this, R.color.bg_btn2))
+            b1.setBackgroundColor(ContextCompat.getColor(this, R.color.bg_btn2))
+            c1.setBackgroundColor(ContextCompat.getColor(this, R.color.bg_btn2))
+            currentTurn = 9
+        }
+
+        if((a2.text == b2.text && b2.text == c2.text) && a2.text != ""){
+            a2.setBackgroundColor(ContextCompat.getColor(this, R.color.bg_btn2))
+            b2.setBackgroundColor(ContextCompat.getColor(this, R.color.bg_btn2))
+            c2.setBackgroundColor(ContextCompat.getColor(this, R.color.bg_btn2))
+            currentTurn = 9
+        }
+
+        if((a3.text == b3.text && b3.text == c3.text) && a3.text != ""){
+            a3.setBackgroundColor(ContextCompat.getColor(this, R.color.bg_btn2))
+            b3.setBackgroundColor(ContextCompat.getColor(this, R.color.bg_btn2))
+            c3.setBackgroundColor(ContextCompat.getColor(this, R.color.bg_btn2))
+            currentTurn = 9
+        }
+
+        if((a1.text == b2.text && b2.text == c3.text) && a1.text != ""){
+            a1.setBackgroundColor(ContextCompat.getColor(this, R.color.bg_btn2))
+            b2.setBackgroundColor(ContextCompat.getColor(this, R.color.bg_btn2))
+            c3.setBackgroundColor(ContextCompat.getColor(this, R.color.bg_btn2))
+            currentTurn = 9
+        }
+
+        if((a3.text == b2.text && b2.text == c1.text) && a3.text != ""){
+            a3.setBackgroundColor(ContextCompat.getColor(this, R.color.bg_btn2))
+            b2.setBackgroundColor(ContextCompat.getColor(this, R.color.bg_btn2))
+            c1.setBackgroundColor(ContextCompat.getColor(this, R.color.bg_btn2))
+            currentTurn = 9
+        }
+
     }
 
 }
