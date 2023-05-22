@@ -145,23 +145,23 @@ class GameActivity : AppCompatActivity() {
 
         restart.setOnClickListener {
             a1.text = ""
-            a1.setBackgroundColor(ContextCompat.getColor(this, R.color.bg_btn2))
+            a1.setBackgroundColor(ContextCompat.getColor(this, R.color.bg_btn))
             a2.text = ""
-            a2.setBackgroundColor(ContextCompat.getColor(this, R.color.bg_btn2))
+            a2.setBackgroundColor(ContextCompat.getColor(this, R.color.bg_btn))
             a3.text = ""
-            a3.setBackgroundColor(ContextCompat.getColor(this, R.color.bg_btn2))
+            a3.setBackgroundColor(ContextCompat.getColor(this, R.color.bg_btn))
             b1.text = ""
-            b1.setBackgroundColor(ContextCompat.getColor(this, R.color.bg_btn2))
+            b1.setBackgroundColor(ContextCompat.getColor(this, R.color.bg_btn))
             b2.text = ""
-            b2.setBackgroundColor(ContextCompat.getColor(this, R.color.bg_btn2))
+            b2.setBackgroundColor(ContextCompat.getColor(this, R.color.bg_btn))
             b3.text = ""
-            b3.setBackgroundColor(ContextCompat.getColor(this, R.color.bg_btn2))
+            b3.setBackgroundColor(ContextCompat.getColor(this, R.color.bg_btn))
             c1.text = ""
-            c1.setBackgroundColor(ContextCompat.getColor(this, R.color.bg_btn2))
+            c1.setBackgroundColor(ContextCompat.getColor(this, R.color.bg_btn))
             c2.text = ""
-            c2.setBackgroundColor(ContextCompat.getColor(this, R.color.bg_btn2))
+            c2.setBackgroundColor(ContextCompat.getColor(this, R.color.bg_btn))
             c3.text = ""
-            c3.setBackgroundColor(ContextCompat.getColor(this, R.color.bg_btn2))
+            c3.setBackgroundColor(ContextCompat.getColor(this, R.color.bg_btn))
             currentTurn = 0
             ui()
         }
