@@ -4,7 +4,7 @@
 <center><h2>TicTacToe game created in Android Studio with Kotlin.</h2></center>
 <br>
 
-## Dowload the APK <a href="https://github.com/Conper/TicTacToe-App/blob/master/TicTacToe_V.1.101.apk">here</a> <img src="https://github.com/Conper/TicTacToe-App/assets/79358509/e76c4b80-66de-4a8c-bf2f-9169a622f66c" width=5%>
+## Dowload the APK <a href="TicTacToe_V.1.101.apk">here</a> <img src="https://github.com/Conper/TicTacToe-App/assets/79358509/e76c4b80-66de-4a8c-bf2f-9169a622f66c" width=5%>
 
 <br>
 <h3>Previews:</h3>
