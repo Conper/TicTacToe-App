@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageButton
 import android.widget.TextView
+import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.core.content.ContextCompat
 
 
@@ -24,8 +25,10 @@ class GameActivity : AppCompatActivity() {
 
     private lateinit var tvTurn: TextView
     private lateinit var restart:ImageButton
+    private lateinit var game: ConstraintLayout
 
     private var currentTurn: Int = 0
+    private var play: Boolean = true
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -50,11 +53,12 @@ class GameActivity : AppCompatActivity() {
 
         tvTurn = findViewById(R.id.tvTurn)
         restart = findViewById(R.id.restart)
+        game = findViewById(R.id.game)
     }
 
     private fun listeners() {
         a1.setOnClickListener {
-            if(a1.text == "" && currentTurn < 9){
+            if(a1.text == "" && play){
                 if(currentTurn%2 == 0) {
                     a1.text = "X"
                     currentTurn++
@@ -64,7 +68,7 @@ class GameActivity : AppCompatActivity() {
                     ui()}}}
 
         a2.setOnClickListener {
-            if(a2.text == "" && currentTurn < 9){
+            if(a2.text == "" && play){
                 if(currentTurn%2 == 0) {
                     a2.text = "X"
                     currentTurn++
@@ -74,7 +78,7 @@ class GameActivity : AppCompatActivity() {
                     ui()}}}
 
         a3.setOnClickListener {
-            if(a3.text == "" && currentTurn < 9){
+            if(a3.text == "" && play){
                 if(currentTurn%2 == 0) {
                     a3.text = "X"
                     currentTurn++
@@ -84,7 +88,7 @@ class GameActivity : AppCompatActivity() {
                     ui()}}}
 
         b1.setOnClickListener {
-            if(b1.text == "" && currentTurn < 9){
+            if(b1.text == "" && play){
                 if(currentTurn%2 == 0) {
                     b1.text = "X"
                     currentTurn++
@@ -94,7 +98,7 @@ class GameActivity : AppCompatActivity() {
                     ui()}}}
 
         b2.setOnClickListener {
-            if(b2.text == "" && currentTurn < 9){
+            if(b2.text == "" && play){
                 if(currentTurn%2 == 0) {
                     b2.text = "X"
                     currentTurn++
@@ -104,7 +108,7 @@ class GameActivity : AppCompatActivity() {
                     ui()}}}
 
         b3.setOnClickListener {
-            if(b3.text == "" && currentTurn < 9){
+            if(b3.text == "" && play){
                 if(currentTurn%2 == 0) {
                     b3.text = "X"
                     currentTurn++
@@ -114,7 +118,7 @@ class GameActivity : AppCompatActivity() {
                     ui()}}}
 
         c1.setOnClickListener {
-            if(c1.text == "" && currentTurn < 9){
+            if(c1.text == "" && play){
                 if(currentTurn%2 == 0) {
                     c1.text = "X"
                     currentTurn++
@@ -124,7 +128,7 @@ class GameActivity : AppCompatActivity() {
                     ui()}}}
 
         c2.setOnClickListener {
-            if(c2.text == "" && currentTurn < 9){
+            if(c2.text == "" && play){
                 if(currentTurn%2 == 0) {
                     c2.text = "X"
                     currentTurn++
@@ -134,7 +138,7 @@ class GameActivity : AppCompatActivity() {
                     ui()}}}
 
         c3.setOnClickListener {
-            if(c3.text == "" && currentTurn < 9){
+            if(c3.text == "" && play){
                 if(currentTurn%2 == 0) {
                     c3.text = "X"
                     currentTurn++
@@ -162,7 +166,9 @@ class GameActivity : AppCompatActivity() {
             c2.setBackgroundColor(ContextCompat.getColor(this, R.color.bg_btn))
             c3.text = ""
             c3.setBackgroundColor(ContextCompat.getColor(this, R.color.bg_btn))
+            window.statusBarColor = getColor(R.color.bg)
             currentTurn = 0
+            play = true
             ui()
         }
 
@@ -177,56 +183,68 @@ class GameActivity : AppCompatActivity() {
             a1.setBackgroundColor(ContextCompat.getColor(this, R.color.bg_btn2))
             a2.setBackgroundColor(ContextCompat.getColor(this, R.color.bg_btn2))
             a3.setBackgroundColor(ContextCompat.getColor(this, R.color.bg_btn2))
-            currentTurn = 9
+            play = false
         }
 
         if((b1.text == b2.text && b2.text == b3.text) && b1.text != ""){
             b1.setBackgroundColor(ContextCompat.getColor(this, R.color.bg_btn2))
             b2.setBackgroundColor(ContextCompat.getColor(this, R.color.bg_btn2))
             b3.setBackgroundColor(ContextCompat.getColor(this, R.color.bg_btn2))
-            currentTurn = 9
+            play = false
         }
 
         if((c1.text == c2.text && c2.text == c3.text) && c1.text != ""){
             c1.setBackgroundColor(ContextCompat.getColor(this, R.color.bg_btn2))
             c2.setBackgroundColor(ContextCompat.getColor(this, R.color.bg_btn2))
             c3.setBackgroundColor(ContextCompat.getColor(this, R.color.bg_btn2))
-            currentTurn = 9
+            play = false
         }
 
         if((a1.text == b1.text && b1.text == c1.text) && a1.text != ""){
             a1.setBackgroundColor(ContextCompat.getColor(this, R.color.bg_btn2))
             b1.setBackgroundColor(ContextCompat.getColor(this, R.color.bg_btn2))
             c1.setBackgroundColor(ContextCompat.getColor(this, R.color.bg_btn2))
-            currentTurn = 9
+            play = false
         }
 
         if((a2.text == b2.text && b2.text == c2.text) && a2.text != ""){
             a2.setBackgroundColor(ContextCompat.getColor(this, R.color.bg_btn2))
             b2.setBackgroundColor(ContextCompat.getColor(this, R.color.bg_btn2))
             c2.setBackgroundColor(ContextCompat.getColor(this, R.color.bg_btn2))
-            currentTurn = 9
+            play = false
         }
 
         if((a3.text == b3.text && b3.text == c3.text) && a3.text != ""){
             a3.setBackgroundColor(ContextCompat.getColor(this, R.color.bg_btn2))
             b3.setBackgroundColor(ContextCompat.getColor(this, R.color.bg_btn2))
             c3.setBackgroundColor(ContextCompat.getColor(this, R.color.bg_btn2))
-            currentTurn = 9
+            play = false
         }
 
         if((a1.text == b2.text && b2.text == c3.text) && a1.text != ""){
             a1.setBackgroundColor(ContextCompat.getColor(this, R.color.bg_btn2))
             b2.setBackgroundColor(ContextCompat.getColor(this, R.color.bg_btn2))
             c3.setBackgroundColor(ContextCompat.getColor(this, R.color.bg_btn2))
-            currentTurn = 9
+            play = false
         }
 
         if((a3.text == b2.text && b2.text == c1.text) && a3.text != ""){
             a3.setBackgroundColor(ContextCompat.getColor(this, R.color.bg_btn2))
             b2.setBackgroundColor(ContextCompat.getColor(this, R.color.bg_btn2))
             c1.setBackgroundColor(ContextCompat.getColor(this, R.color.bg_btn2))
-            currentTurn = 9
+            play = false
+        }
+
+        if(currentTurn == 9 && play){
+            a1.setBackgroundColor(ContextCompat.getColor(this, R.color.draw_btn))
+            a2.setBackgroundColor(ContextCompat.getColor(this, R.color.draw_btn))
+            a3.setBackgroundColor(ContextCompat.getColor(this, R.color.draw_btn))
+            b1.setBackgroundColor(ContextCompat.getColor(this, R.color.draw_btn))
+            b2.setBackgroundColor(ContextCompat.getColor(this, R.color.draw_btn))
+            b3.setBackgroundColor(ContextCompat.getColor(this, R.color.draw_btn))
+            c1.setBackgroundColor(ContextCompat.getColor(this, R.color.draw_btn))
+            c2.setBackgroundColor(ContextCompat.getColor(this, R.color.draw_btn))
+            c3.setBackgroundColor(ContextCompat.getColor(this, R.color.draw_btn))
         }
 
     }

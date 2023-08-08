@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:id="@+id/game"
     android:layout_height="match_parent"
     tools:context=".GameActivity"
     android:background="@color/bg"
@@ -17,8 +18,8 @@
         app:layout_constraintEnd_toStartOf="@+id/a2"
         app:layout_constraintBottom_toTopOf="@+id/b1"
         android:layout_marginBottom="10dp"
-        tools:text="1"
-        android:textSize="30sp"
+        tools:text="X"
+        android:textSize="60sp"
         android:textStyle="bold"
         android:textColor="@color/white"
         android:backgroundTint="@color/bg_btn"/>
@@ -33,7 +34,7 @@
         app:layout_constraintBottom_toTopOf="@+id/b2"
         android:layout_marginBottom="10dp"
         tools:text="1"
-        android:textSize="30sp"
+        android:textSize="60sp"
         android:textStyle="bold"
         android:textColor="@color/white"
         android:backgroundTint="@color/bg_btn"/>
@@ -48,7 +49,7 @@
         app:layout_constraintBottom_toTopOf="@+id/b3"
         android:layout_marginBottom="10dp"
         tools:text="1"
-        android:textSize="30sp"
+        android:textSize="60sp"
         android:textStyle="bold"
         android:textColor="@color/white"
         android:backgroundTint="@color/bg_btn"/>
@@ -64,7 +65,7 @@
         app:layout_constraintBottom_toTopOf="@+id/c1"
         android:layout_marginBottom="10dp"
         tools:text="1"
-        android:textSize="30sp"
+        android:textSize="60sp"
         android:textStyle="bold"
         android:textColor="@color/white"
         android:backgroundTint="@color/bg_btn"/>
@@ -79,7 +80,7 @@
         app:layout_constraintBottom_toTopOf="@+id/c2"
         android:layout_marginBottom="10dp"
         tools:text="1"
-        android:textSize="30sp"
+        android:textSize="60sp"
         android:textStyle="bold"
         android:textColor="@color/white"
         android:backgroundTint="@color/bg_btn"/>
@@ -94,7 +95,7 @@
         app:layout_constraintBottom_toTopOf="@+id/c3"
         android:layout_marginBottom="10dp"
         tools:text="1"
-        android:textSize="30sp"
+        android:textSize="60sp"
         android:textStyle="bold"
         android:textColor="@color/white"
         android:backgroundTint="@color/bg_btn"/>
@@ -110,7 +111,7 @@
         app:layout_constraintBottom_toTopOf="@+id/cvTurn"
         android:layout_marginBottom="100dp"
         tools:text="1"
-        android:textSize="30sp"
+        android:textSize="60sp"
         android:textStyle="bold"
         android:textColor="@color/white"
         android:backgroundTint="@color/bg_btn"/>
@@ -125,7 +126,7 @@
         app:layout_constraintBottom_toTopOf="@+id/cvTurn"
         android:layout_marginBottom="100dp"
         tools:text="1"
-        android:textSize="30sp"
+        android:textSize="60sp"
         android:textStyle="bold"
         android:textColor="@color/white"
         android:backgroundTint="@color/bg_btn"/>
@@ -140,7 +141,7 @@
         app:layout_constraintBottom_toTopOf="@+id/cvTurn"
         android:layout_marginBottom="100dp"
         tools:text="1"
-        android:textSize="30sp"
+        android:textSize="60sp"
         android:textStyle="bold"
         android:textColor="@color/white"
         android:backgroundTint="@color/bg_btn"/>

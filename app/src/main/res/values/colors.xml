@@ -11,4 +11,5 @@
     <color name="bg">#E0FF72</color>
     <color name="bg_btn">#8DB62E</color>
     <color name="bg_btn2">#DA3939</color>
+    <color name="draw_btn">#2FBDA8</color>
 </resources>
