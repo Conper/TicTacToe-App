@@ -3,10 +3,11 @@ TicTacToe game created in Android Studio with Kotlin.
 <br>
 Previews:
 <br>
-![menu](https://github.com/Conper/TicTacToe-App/assets/79358509/70a4cd86-33f2-475a-a052-1692a8d44ae9)
+<img src="https://github.com/Conper/TicTacToe-App/assets/79358509/53a53180-8c85-4239-83e1-7e5def4d0974" width=25%>
 <br>
-![game](https://github.com/Conper/TicTacToe-App/assets/79358509/2f3dc779-9add-4823-b1bc-4f50132f055c)
+<img src="https://github.com/Conper/TicTacToe-App/assets/79358509/99a7458f-4645-43a1-84e5-d4e4ff4e7dbd" width=25%>
 <br>
-![game2](https://github.com/Conper/TicTacToe-App/assets/79358509/02a2dc91-daca-499f-b501-ad099fca16bd)
-
+<img src="https://github.com/Conper/TicTacToe-App/assets/79358509/3ea546fd-4ce8-462e-8ddb-7b54467c338d" width=25%>
+<br>
+<img src="https://github.com/Conper/TicTacToe-App/assets/79358509/c5f045ae-6afb-427b-a82d-eb7f73bb5850" width=25%>
 
