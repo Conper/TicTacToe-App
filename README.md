@@ -1,10 +1,10 @@
 # TicTacToe-App
 <br>
 
-<center><h2>TicTacToe game created in Android Studio with Kotlin.</h2></center>
+<center>TicTacToe game created in Android Studio with Kotlin.</center>
 <br>
 
-## Dowload the APK <a href="https://drive.google.com/file/d/1h8elpPBUfYV332E9p6RYWQ01JLXdBbEj/view?usp=drive_link">here</a> <img src="https://github.com/Conper/TicTacToe-App/assets/79358509/e76c4b80-66de-4a8c-bf2f-9169a622f66c" width=5%>
+## Dowload the APK <a href="https://mega.nz/file/hoQCGIgY#xWttGs6oTGUCtzYTSf9W5z24zCkpqVpqTkbadH7rh3k">here</a> <img src="https://github.com/Conper/TicTacToe-App/assets/79358509/e76c4b80-66de-4a8c-bf2f-9169a622f66c" width=5%>
 
 <br>
 <h3>Previews:</h3>
